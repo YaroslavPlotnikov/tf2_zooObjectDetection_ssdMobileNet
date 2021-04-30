@@ -101,7 +101,7 @@ if len(args) > 1:
         print('ERROR: Input file \'' + input_name + '\' is not found\nUsage: main.py <path_to_input_file>')
         exit()
 else: # If no argument is provided - get 'input.avi'
-    input_name = 'input.avi'
+    input_name = 'data/input.avi'
 
 # Loading model
 model = tf.saved_model.load(PATH_TO_SAVED_MODEL)
@@ -115,7 +115,7 @@ frame_height = int(cap.get(4))
 frame_rate = int(cap.get(5))
 
 # The output will be stored in 'output.avi' file
-FILE_OUTPUT = 'output.avi'
+FILE_OUTPUT = 'data/output.avi'
 
 # Removing output file, if it exists
 if os.path.isfile(FILE_OUTPUT):
