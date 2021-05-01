@@ -8,4 +8,4 @@ Used codec: MJPG (Motion JPEG)
 python3 main.py <path_to_input_file>
 ```
 
-Default input file: input.avi
+Default input file: data/input.avi
